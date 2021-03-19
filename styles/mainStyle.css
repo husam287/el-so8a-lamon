@@ -10,6 +10,11 @@ textarea {
   
 }
 
+
+footer p{
+  margin: 0;
+}
+
 .getPositionForChangeButton{
   position: absolute;
   top: -15px;
