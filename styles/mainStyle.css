@@ -1,0 +1,84 @@
+.middleContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none !important;
+  
+}
+
+.getPositionForChangeButton{
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+.getPositionForCopy{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#textarea2{
+  cursor: pointer;
+}
+
+#t1{
+    animation: move 1s;
+    -webkit-animation: move 1s;
+  }
+  
+#t2{
+    animation: invmove 1s;
+    -webkit-animation: invmove 1s;
+}
+
+
+
+
+  @keyframes invmove {
+    from {
+      margin-right: 20%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
+              
+  @-webkit-keyframes invmove {
+    from {
+      margin-right: 20%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
+
+  @keyframes move {
+    from {
+      margin-left: 20%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 20%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  
+  
+  
