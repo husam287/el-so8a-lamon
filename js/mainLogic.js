@@ -39,7 +39,7 @@ function write() {
         return 0;
     }
     
-
+    text1.value = fixText(text1.value);
     if(!changed) text2.value = translateToArabic(text1.value)
     else text2.value = translateToLamon(text1.value)
 
@@ -69,6 +69,10 @@ function changer(){
     trans1.innerHTML=trans2.innerHTML;
     trans2.innerHTML=temp;
 
+}
+
+function fixText(text=""){
+    return text.replace(/\n/g,"\n ");
 }
 
 function translateToLamon(text="") {
